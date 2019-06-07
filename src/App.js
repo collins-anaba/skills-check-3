@@ -1,18 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './Components/Header/Header';
-import Wizard from './Components/Wizard/Wizard';
-import Dashboard from './Components/Dashboard/Dashboard';
+import React, { Component } from 'react';
+import {HashRouter} from "react-router-dom"
+import Header from "./Components/Header/Header"
+import routes from "./routes"
 
-function App() {
-  return (
-    <div>
-      <Header/>
+
+class App extends Component {
+  render() {
+    return (
+      <HashRouter>
+         <Header />
+         {routes}
+
+      </HashRouter>
       
-    </div>
-    
-  );
+    );
+  }
 }
 
 export default App;

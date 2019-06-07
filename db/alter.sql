@@ -1,0 +1,8 @@
+ALTER TABLE houses ALTER TABLE orders ADD COLUMN users_id
+ADD COLUMN houe
+ADD IMG
+
+
+
+
+
